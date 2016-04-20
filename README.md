@@ -20,4 +20,4 @@ The url pattern ('/dashboard/') returns a data dashboard visualizing the ingredi
 
 1) The data from the Nutritionix API is a bit dirty (as most data is!). For example, one product shows Beat Carotene as an ingredient which should most certainly be Beta Carotene. Another one shows Banana Pure instead of Banana Puree. So the results when I cleaned the ingredient statements aren't perfect.
 
-2) This is definitely not a finished app. I started building it to satisfy the requirements of a technical test, and it's been a great way to keep learning JavaScript and start learning D3.js.
+2) This is definitely not a finished app. I started building it to satisfy the requirements of a technical test, and it's been a great way to keep learning JavaScript and start learning D3.js. In particular, I'd like to change the layout of the product list on the dashboard view, but I wasn't able to get to that.
