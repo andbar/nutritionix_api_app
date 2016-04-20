@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+  <link rel="stylesheet" type="text/css" href="../static/lib/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../static/lib/css/keen-dashboards.css" />
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ url_for('products_view') }}">Juicy Juice Products</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="{{ url_for('dashboard_view') }}">Dashboard</a></li>
+          <li><a href="{{ url_for('ingredients_view') }}">Ingredients</a></li>
+          <li><a href="https://www.nutritionix.com/api" target="_blank">Powered by Nutritionix API</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    {% block content %}{% endblock %}
+
+    <script type="text/javascript" src="../static/lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/lib/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="../static/lib/js/holder.js"></script>
+    <script>
+      Holder.add_theme("white", { background:"#fff", foreground:"#a7a7a7", size:10 });
+    </script>
+
+    <script type="text/javascript" src="../static/lib/js/keen.min.js"></script>
+    <script type="text/javascript" src="../static/lib/js/meta.js"></script>
+    <script type="text/javascript" src="../static/lib/js/d3.min.js"></script>
+    <script type="text/javascript" src="../static/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<ul>
+    {% for ingredient, products in ingredients|dictsort %}
+    <li>{{ ingredient }}</li>
+    <li>{{ products }} ({{ products|length }})</li>
+    <br>
+    {% endfor %}
+</ul>
+
+<!--<ul>
+    {% for product in products %}
+    <li>{{ product.fields.item_name }}</li>
+    <li>{{ product.fields.ingredients }}</li>
+    <br>
+    {% endfor %}
+</ul>-->
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <ul>
+        <li>{{ product.fields.item_name }}</li>
+        <li>{{ product.fields.nf_serving_size_qty }} - {{ product.fields.nf_serving_size_unit }}</li>
+        <li>{{ product.fields.nf_calories }} calories</li>
+        <li>Ingredients: {{ product.fields.nf_ingredient_statement }}</li>
+    </ul>
+{% endblock %}

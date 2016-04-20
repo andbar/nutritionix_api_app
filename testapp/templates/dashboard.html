@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}
+  Juicy Juice Dashboard
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-sm-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Ingredients by Product Count (hover for ingredient name)
+          </div>
+          <div class="chart-stage">
+            <div id="bubble-chart"></div>
+            <!--<img data-src="holder.js/100%x350/white">-->
+          </div>
+          <div class="chart-notes">
+            Click on the circle to see the list of Juicy Juice products containing that ingredient below
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            10 Most Frequent Ingredients
+          </div>
+          <div class="chart-stage">
+            <div id="bar-graph"></div>
+            <!--<img data-src="holder.js/100%x350/white">-->
+          </div>
+          <div class="chart-notes">
+            These are the 10 ingredients that appear most often in Juicy Juice products
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-12">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            <div id="list-title"></div>
+            <!--Placeholder Text-->
+          </div>
+          <div class="chart-stage">
+            <div id="list-graph"></div>
+            <!--<img data-src="holder.js/100%x150/white">-->
+          </div>
+          <div class="chart-notes">
+            Click on the name of the product to see more nutritional information and a complete list of ingredients
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <p class="small text-muted">Dashboard template by <a href="https://keen.io">Keen IO</a></p>
+
+  </div>
+{% endblock %}
+
+
+</body>
+</html>
