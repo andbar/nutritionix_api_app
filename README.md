@@ -16,8 +16,10 @@ The url pattern ('/api/ingredients/') returns a JSON response of that same infor
 
 The url pattern ('/dashboard/') returns a data dashboard visualizing the ingredient info. It uses D3.js to create a bubble chart of the ingredients based on their product count, a bar graph of the top 10 most frequent ingredients, and a list of the products which contain a particular ingredient. Note that when the page loads it sets the product list to show the products containing the most frequent ingredient, but the list changes when you click on one of the circles in the bubble chart. You can also click on the product name to go to a basic template view of the product with some further details.
 
-## Two other notes:
+## Three other notes:
 
 1) The data from the Nutritionix API is a bit dirty (as most data is!). For example, one product shows Beat Carotene as an ingredient which should most certainly be Beta Carotene. Another one shows Banana Pure instead of Banana Puree. So the results when I cleaned the ingredient statements aren't perfect.
 
 2) This is definitely not a finished app. I started building it to satisfy the requirements of a technical test, and it's been a great way to keep learning JavaScript and start learning D3.js. In particular, I'd like to change the layout of the product list on the dashboard view, but I wasn't able to get to that.
+
+3) If you want to use it, you'll have to put your Nutritionix API id and key in the appropriate spots on the config.py file.
