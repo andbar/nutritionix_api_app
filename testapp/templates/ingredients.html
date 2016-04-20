@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+{% block title %}
+    Juicy Juice Ingredients
+{% endblock %}
 {% block content %}
 <ul>
     {% for ingredient, products in ingredients|dictsort %}

@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+{% block title %}
+    Juicy Juice Products
+{% endblock %}
 {% block content %}
     <p>Total Products in Juicy Juice Brand: {{ total }}</p>
     <p>Average Calories Per Ounce: {{ average|round(2) }}</p>
